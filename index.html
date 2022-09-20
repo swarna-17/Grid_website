@@ -1,82 +1,49 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>GRID project</title>
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
     <div class="container">
-        <!-- header -->
-        <header>
-                <div class="logo">
-                    <h2>GRIDS PROJECT</h2>
-                </div>
-        </header>
-        <aside>
-            <!-- aside box(left) -->
-            <div class="leftbox">
-                <h1>GRID Contents</h1>
-                <ul>
-                    <li>grid-template-rows</li>
-                    <li>grid-template-columns</li>
-                    <li>grid-areas</li>
-                    <li>grid-row-start</li>
-                    <li>grid-column-start</li>
-                    <li>grid-column-end</li>
-                    <li>grid-row-end</li>
-                    <li>grid-column</li>
-                    <li>grid-row</li>
-                    <li>grid-template-area</li>
-                    <li>justify-contents</li>
-                    <li>grid-template</li>
-                    <li>align-self</li>
-                    <li>column-gap</li>
-                    <li>row-gap</li>
-                    <li>gap</li>
-                </ul>
-                <h1>FLEX Contents</h1>
-                <ul>
-                    <li>flex-directions</li>
-                    <li>order</li>
-                    <li>justify-contents</li>
-                    <li>align-items</li>
-                    <li>flex-wrap</li>
-                    <li>flex-shrink</li>
-                    <li>flex-basis</li>
-                    <li>flex-grow</li>
-                    <li>flex-flow</li>
-                    <li>align-items</li>
-                    <li>align-self</li>
-                    <li>flex</li>
-                    <li>column-gap</li>
-                    <li>row-gap</li>
-                    <li>gap</li>
-                </ul>
-            </div>
-        </aside>
-        <!-- main box(right) -->
-        <main>
-            <div class="Main-box">
-                    <h1>DESERT</h1>
-                    <p>A desert is a vast, dry area characterised by sand or rocks that receives little rainfall, has adverse growing conditions for crops and agriculture, and poses difficult living conditions for humans. Deserts cover one-third of the Earth's land surface. Antarctica is known as the world's largest polar desert.</p>
-                    <img src="images/desert.jpg" alt="">
-                    <p>Due to the unfavourable conditions, agriculture is not possible in the deserts. Camels can ingest the bitter or salty water available in the waterholes. Around the water sources in deserts, there are small places of water called oases which are formed from underground river water. Camels are known as the “ship of the deserts” because they can live and roam in deserts for long periods of time without water or food. They are known as the best mode of transportation in the deserts. Camels are blessed with a hump on their back which stores food and water that can be used when needed.</p>
-            </div>
-            <div class="Main-box">
-                    <h1>SEA BEACH</h1>
-                    <p> A beach is a narrow, gently sloping strip of land that lies along the edge of an ocean, lake, or river. Materials such as sand, pebbles, rocks, and seashell fragments cover beaches. Most beach materials are the products of weathering and erosion. Over many years, water and wind wear away at the land.</p>
-                    <img src="images/sea.jpg" alt="">
-                    <p>Beaches also change seasonally. During the winter, storm winds toss sand into the air. This can sometimes erode beaches and create sandbars. Sandbars are narrow, exposed areas of sand and sediment just off the beach. During the summer, waves retrieve sand from sandbars and build the beach back up again. These seasonal changes cause beaches to be wider and have a gentle slope in the summer, and be narrower and steeper in the winter.</p>
-            </div>
-            <div class="Main-box">
-                    <h1>MOUNTAIN</h1>
-                    <p>A mountain is an elevated portion of the Earth's crust, generally with steep sides that show significant exposed bedrock. Although definitions vary, a mountain may differ from a plateau in having a limited summit area, and is usually higher than a hill, typically rising at least 300 metres (1,000 feet) above the surrounding land. A few mountains are isolated summits, but most occur in mountain ranges.</p>
-                    <img src="images/mountain.jpg" alt="">
-                    <p>Mountains are formed through tectonic forces, erosion, or volcanism, which act on time scales of up to tens of millions of years. Once mountain building ceases, mountains are slowly leveled through the action of weathering, through slumping and other forms of mass wasting, as well as through erosion by rivers and glaciers.</p>
-            </div>
-        </main>
+      <form action="" method="get" class="form_div" >
+        <!-- First Name -->
+        <div class="form_div">
+          <label for="f_name">First Name</label>
+          <input type="text" placeholder="" id="f_name">
+          
+        </div>
+        <!-- Last Name -->
+        <div class="form_div">
+          <label for="l_name">Last Name</label>
+          <input type="text" placeholder="" id="l_name">
+        </div>
+        <!-- Area of Interest -->
+        <div class="form_div">
+          <label for="interest">Area of Interest</label>
+          <select name="Area of interest" id="interest" value="" name="area_of_intrest">
+            <option value="" ></option>
+            <option value="cricket" >cricket</option>
+            <option value="fooball">football</option>
+            <option value="basketball">basketball</option>
+            <option value="tennis">tennis</option>
+            <option value="volleyball">volleyball</option>
+            <option value="shuttle">shuttle</option>
+          </select>
+        </div>
+        <!-- Terms and COnditions agreement -->
+        <div class="form_div">
+          <input type="radio" id="terms">
+          <label for="terms" >I AGREE TO THE TERMS AND CONDITIONS</label>
+        </div>
+        <!-- Submit button -->
+        <div class="form_btn">
+          <button type="submit" id="submit" value="submit" onclick="validate();">SUBMIT</button>
+        </div>
+      </form>
     </div>
-</body>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+  </html>
 
-</html>
