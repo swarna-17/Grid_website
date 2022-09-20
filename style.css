@@ -1,55 +1,81 @@
 
+html{
+    height: 100%;
+}
 body {
-    background-color: black;
+    background-color: #080710; 
 }
-ul {
-    list-style-type: none;
-}
-li {
-    color: #f9f9f9;
-    line-height: 2rem;
-    font-size: 20px;
-}
-h1 {
-    color: #fffffc;
-} 
-p {
-    line-height: 1.75;   
-}
-img {
-    max-width: 100%;
-}
-
-/* container */
-
 .container {
-    display: grid;
-    grid-template-rows: 100px auto 60px;
-}
-
-header {
-    display: grid;
-    background-color: #F9F9F9;
-    grid-column-start: span 3;
+    display: flex;
     justify-content: center;
     align-items: center;
+    height: 900px;
 }
-aside {
-    background-color: #313338;
-    grid-column-start: span 1;
-    padding: 64px;
+
+form {
+    background-color: rgb(168, 58, 104);
+    border-radius: 40px ;
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(255,255,255,0.6);
+    padding: 50px 35px;
     
 }
-main {
-    background-color: #fffffc;
-    grid-column-start: span 2;
+form * {
+    font-family: 'poppins,sans-serif';
+    color: #fcfcfc;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+    padding-top: 30px; 
+}
+label { 
+    margin-top: 30px;
+    font-size: 16px;
+}
+input[type="radio"] {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    
+} 
 
+#interest {
+    width: 100%;
 }
-/* Main */
+input,select {
+    cursor: pointer;
+    height:50px;
+    width: 95%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 20px;
+    padding: 0px 10px;
+    font-size: 14px;
+  
+}
+input:focus {
+    border: 3px solid #e0edf3;
+    box-shadow: 0 8px 8px -4px rgb(213, 225, 229);
+}
 
-.Main-box h1 {
-    color: #202020;
+::placeholder {
+    color: #e5e5e5;
 }
-.Main-box {
-    padding: 32px;
+button {
+    margin-top: 20px;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-bottom: 30px;
+    height: 15px;
+    width: 100%;
 }
+button:hover {
+    background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B);
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+    transition: 0.7s;
+}
+
+
